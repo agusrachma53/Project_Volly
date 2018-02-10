@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.voley.www.voley.CustomerUpdateData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.pchmn.androidverify.Form
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    tools:layout_editor_absoluteY="3dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp"
+                        android:text="Update Data Diri"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Name"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+
+                        <com.pchmn.androidverify.InputValidator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:errorMessage="Please Fill Your Name More Then 3 Character"
+                            app:minLength="3"
+                            app:required="true"
+                            app:requiredMessage="Please Fill Your Name">
+
+                            <EditText
+                                android:id="@+id/u_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                        </com.pchmn.androidverify.InputValidator>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Address"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+
+                        <com.pchmn.androidverify.InputValidator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:errorMessage="Please Fill Your Address More Then 10 Character"
+                            app:minLength="10"
+                            app:required="true"
+                            app:requiredMessage="Please Fill Your Address">
+
+                            <EditText
+                                android:id="@+id/u_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="text" />
+
+                        </com.pchmn.androidverify.InputValidator>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Country"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+                        <com.pchmn.androidverify.InputValidator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:errorMessage="Please Fill Your Country"
+                            app:required="true"
+                            app:requiredMessage="Please Fill Your Country">
+
+                            <EditText
+                                android:id="@+id/u_country"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="text" />
+
+                        </com.pchmn.androidverify.InputValidator>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Province"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+                        <com.pchmn.androidverify.InputValidator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:errorMessage="Please Fill Your Provincy"
+                            app:required="true"
+                            app:requiredMessage="Please Fill Your Provincy">
+
+                            <EditText
+                                android:id="@+id/u_province"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="text" />
+
+                        </com.pchmn.androidverify.InputValidator>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="City"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+                        <com.pchmn.androidverify.InputValidator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:errorMessage="Please Fill Your City"
+                            app:required="true"
+                            app:requiredMessage="Please Fill Your City">
+
+                            <EditText
+                                android:id="@+id/u_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                        </com.pchmn.androidverify.InputValidator>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Post Code"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+                        <com.pchmn.androidverify.InputValidator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:errorMessage="Please Fill Your Post Code"
+                            app:required="true"
+                            app:requiredMessage="Please Fill Your Post Code">
+
+                            <EditText
+                                android:id="@+id/u_post_code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="number" />
+
+                        </com.pchmn.androidverify.InputValidator>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Email"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+                        <com.pchmn.androidverify.InputValidator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:errorMessage="Please Fill Your Post Email"
+                            app:required="true"
+                            app:requiredMessage="Please Fill Your Post Email">
+
+                            <EditText
+                                android:id="@+id/u_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textEmailAddress" />
+
+                        </com.pchmn.androidverify.InputValidator>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Username"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+                        <com.pchmn.androidverify.InputValidator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:errorMessage="Please Fill Your Post Username"
+                            app:minLength="3"
+                            app:required="true"
+                            app:requiredMessage="Please Fill Your Post Username">
+
+                            <EditText
+                                android:id="@+id/u_username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                        </com.pchmn.androidverify.InputValidator>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Password"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+                        <com.pchmn.androidverify.InputValidator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:errorMessage="Please Fill Your Post Password More Then 6 Character"
+                            app:minLength="3"
+                            app:required="true"
+                            app:requiredMessage="Please Fill Your Post Password">
+
+                            <EditText
+                                android:id="@+id/u_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="text" />
+
+                        </com.pchmn.androidverify.InputValidator>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Gender"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+
+                        <Spinner
+                            android:id="@+id/u_ganderx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Phone"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+                        <com.pchmn.androidverify.InputValidator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:errorMessage="Please Fill Your Phone"
+                            app:minLength="11"
+                            app:maxLength="12"
+                            app:required="true"
+                            app:requiredMessage="Please Fill Your Post Phone">
+
+                            <EditText
+                                android:id="@+id/u_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+
+                        </com.pchmn.androidverify.InputValidator>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Bank Account"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp" />
+
+                        <com.pchmn.androidverify.InputValidator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:errorMessage="Please Fill Your Bank Account"
+                            app:minLength="8"
+                            app:required="true"
+                            app:requiredMessage="Please Fill Your Bank Account">
+
+                            <EditText
+                                android:id="@+id/u_bank_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                        </com.pchmn.androidverify.InputValidator>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/updateData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="OK" />
+
+                    <Button
+                        android:id="@+id/batalUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NO" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </com.pchmn.androidverify.Form>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
