@@ -12,16 +12,6 @@ public class CustomerModel {
     private String address;
     private String idCustomer;
 
-    public CustomerModel(String c_name, String c_email, String c_phone, String c_address) {
-        this.nama = c_name;
-        this.email = c_email;
-        this.phone = c_phone;
-        this.address = c_address;
-    }
-
-    public CustomerModel() {
-    }
-
 
     public String getNama() {
         return nama;

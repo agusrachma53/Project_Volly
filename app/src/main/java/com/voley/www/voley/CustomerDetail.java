@@ -2,11 +2,13 @@ package com.voley.www.voley;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class CustomerDetail extends AppCompatActivity {
@@ -23,6 +25,11 @@ public class CustomerDetail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_customer);
 
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+        getSupportActionBar().setCustomView(R.layout.custom_action_bar_layout);
+        View view = getSupportActionBar().getCustomView();
+
         Intent i = (Intent) getIntent();
         final String idCustomer = i.getExtras().getString("idCustomer");
         String name = i.getExtras().getString("nama");
@@ -35,8 +42,8 @@ public class CustomerDetail extends AppCompatActivity {
         TextView phoneCustomer = (TextView) findViewById(R.id.c_phone);
         TextView addressCustomer = (TextView) findViewById(R.id.c_address);
         TextView emailCustomer = (TextView) findViewById(R.id.c_email);
-        Button backTOHome = (Button) findViewById(R.id.back);
-        Button updateData = (Button) findViewById(R.id.updateCustomer);
+        ImageButton backTOHome = (ImageButton) findViewById(R.id.backbtn);
+        ImageButton updateData = (ImageButton) findViewById(R.id.editbtn);
 
         idCustomer2.setText(idCustomer);
         nameCustomer.setText(name);
